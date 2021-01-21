@@ -4,8 +4,7 @@ name: CI
 
 on: [push]
 env:
-  SPECTRAL_TOKEN: ${{ secrets.SPECTRAL_TOKEN }}
-  SPECTRAL_DSN: https://${{ secrets.SPECTRAL_TOKEN }}@calm-ridge-50342.herokuapp.com
+  SPECTRAL_DSN: ${{ secrets.SPECTRAL_DSN }}
 jobs:
   build:
     name: Spectral
