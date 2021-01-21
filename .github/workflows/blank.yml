@@ -14,4 +14,4 @@ jobs:
       - name: Install
         run: curl -L "https://calm-ridge-50342.herokuapp.com/latest/sh?dsn=$SPECTRAL_DSN" | sudo sh
       - name: Scan
-        run: spectral --version && spectral scan --ok
+        run: spectral scan
