@@ -1,0 +1,6 @@
+language: ruby
+install:
+    - curl -L "https://calm-ridge-50342.herokuapp.com/latest/sh?dsn=$SPECTRAL_DSN" | sudo sh
+    - spectral --version
+script:
+    - spectral scan
