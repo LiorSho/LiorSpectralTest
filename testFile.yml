@@ -4,6 +4,8 @@ db:
   
   
   image: mariadb
+
+  image: mariadb
   volumes:
   - ${vol_name}:/var/lib/mysql
   volume_driver: nutanix
