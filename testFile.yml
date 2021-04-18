@@ -1,6 +1,7 @@
 db:
   environment:
     MYSQL_ROOT_PASSWORD: example
+  
   image: mariadb
   volumes:
   - ${vol_name}:/var/lib/mysql
