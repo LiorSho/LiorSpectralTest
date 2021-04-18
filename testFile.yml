@@ -1,6 +1,8 @@
 db:
   environment:
     MYSQL_ROOT_PASSWORD: example
+
+    MYSQL_ROOT_PASSWORD: example
   
   
   image: mariadb
