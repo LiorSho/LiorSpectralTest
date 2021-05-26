@@ -13,6 +13,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install
         #run: curl -L "https://bruce-mountain-16192.herokuapp.com/latest/sh?dsn=$SPECTRAL_DSN" | sudo sh
-        run: curl -L 'https://bruce-mountain-16192.herokuapp.com/latest/sh?v=1.4.0' | sh
+        run: curl -L 'https://bruce-mountain-16192.herokuapp.com/latest/sh?v=1.4.0' | sudo sh
       - name: Scan
         run: spectral scan
