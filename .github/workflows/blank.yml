@@ -10,7 +10,7 @@ jobs:
     name: Spectral
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Run branch 1
         run: git rev-parse --abbrev-ref HEAD
       - name: Run branch 2
