@@ -1,0 +1,15 @@
+rules:
+- id: DICT001
+  name: Dictionary
+  description: Dictionary
+  applies_to:
+  - ".*"
+  tags:
+  - base
+  severity: info
+  pattern_group:
+    aggregate: or
+    scope: text
+    patterns:
+    - pattern: words.yaml
+      pattern_type: dict
